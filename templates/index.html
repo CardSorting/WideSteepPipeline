@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTG Card Fetcher</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Magic: The Gathering Card Fetcher</h1>
+        
+        <textarea id="card-names" rows="5" placeholder="Enter card names, one per line"></textarea>
+        
+        <div class="button-group">
+            <button id="fetch-button">Fetch Cards</button>
+            <button id="export-button" disabled>Export to CSV</button>
+            <button id="clear-button" disabled>Clear All</button>
+        </div>
+        
+        <div id="status-container"></div>
+        
+        <div id="progress-container">
+            <div id="progress-fill"></div>
+        </div>
+        
+        <div id="message-container"></div>
+        
+        <div id="card-list"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
